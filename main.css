@@ -144,12 +144,12 @@ p{
 
 /* novedades slider */
 
-.news-wrap {
+.news-wrap{
 	width: 100%;
 	padding: 30px 0;
 }
 
-.news-grid {
+.news-grid{
 	width: auto;
 	position: relative;
 	background: var(--clr-white);
@@ -159,20 +159,21 @@ p{
 	margin: 10px;
 }
 
-.news-grid-image {
+.news-grid-image{
 	width: 100%;
 	height: 280px;
 	overflow: hidden;
 }
 
-.news-grid-image img {
+.news-grid-image img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	transition: .5s;
+	filter: grayscale(1);
 }
 
-.news-grid-box {
+.news-grid-box{
 	display: block;
 	position: absolute;
 	text-align: center;
@@ -183,7 +184,7 @@ p{
 	transition: .5s;
 }
 
-.news-grid-box h1 {
+.news-grid-box h1{
 	color: var(--clr-white);
 	font-size: 30px;
 	font-weight: 400;
@@ -193,18 +194,18 @@ p{
 	margin-bottom: 5px;
 }
 
-.news-grid-box p {
+.news-grid-box p{
 	color: var(--clr-white);
 	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 0px;
 }
 
-.news-grid-txt {
+.news-grid-txt{
 	padding: 25px;
 }
 
-.news-grid-txt span {
+.news-grid-txt span{
 	color: var(--clr-red);
 	font-size: 13px;
 	font-weight: 500;
@@ -212,7 +213,7 @@ p{
 	text-transform: uppercase;
 }
 
-.news-grid-txt h2 {
+.news-grid-txt h2{
 	color: #111;
 	font-size: 20px;
 	font-weight: 500;
@@ -220,12 +221,12 @@ p{
 	margin: 10px 0px 5px 0px;
 }
 
-.news-grid-txt ul {
+.news-grid-txt ul{
 	padding: 0;
 	margin: 0;
 }
 
-.news-grid-txt ul li {
+.news-grid-txt ul li{
 	list-style: none;
 	display: inline-block;
 	color: #999;
@@ -235,14 +236,14 @@ p{
 	letter-spacing: 1px;
 }
 
-.news-grid-txt ul li i {
+.news-grid-txt ul li i{
 	color: var(--clr-blue);
 	font-size: 14px;
 	font-weight: 500;
 	margin-right: 5px;
 }
 
-.news-grid-txt p {
+.news-grid-txt p{
 	color: #222;
 	font-size: 14px;
 	font-weight: 300;
@@ -253,7 +254,7 @@ p{
 	margin-bottom: 25px;
 }
 
-.news-grid-txt a {
+.news-grid-txt a{
 	color: #fff;
 	background: var(--clr-blue);
 	padding: 8px 20px;
@@ -268,18 +269,18 @@ p{
 
 /* novedades slider hover */
 
-.news-grid:hover .news-grid-box {
+.news-grid:hover .news-grid-box{
 	left: 15px;
 	transition: .5s;
 }
 
-.news-grid:hover .news-grid-image img {
-	filter: grayscale(1);
+.news-grid:hover .news-grid-image img{
+	filter: grayscale(0);
 	transform: scale(1.1);
 	transition: .5s;
 }
 
-.news-grid:hover .news-grid-txt a {
+.news-grid:hover .news-grid-txt a{
 	text-decoration-line: none;
 	color: var(--clr-white);
 	letter-spacing: 1.5px;
@@ -288,11 +289,11 @@ p{
 
 /* novedades slider OWL */
 
-.owl-controls .owl-buttons {
+.owl-controls .owl-buttons{
 	position: relative;
 }
 
-.owl-controls .owl-prev {
+.owl-controls .owl-prev{
 	position: absolute;
 	left: -40px;
 	bottom: 230px;
@@ -302,7 +303,7 @@ p{
 	transition: .5s;
 }
 
-.owl-controls .owl-next {
+.owl-controls .owl-next{
 	position: absolute;
 	right: -40px;
 	bottom: 230px;
@@ -312,18 +313,18 @@ p{
 	transition: .5s;
 }
 
-.owl-controls .owl-prev:after, .owl-controls .owl-next:after {
+.owl-controls .owl-prev:after, .owl-controls .owl-next:after{
 	content: '\f104';
 	font-family: FontAwesome;
 	color: var(--clr-white);
 	font-size: 16px;
 }
 
-.owl-controls .owl-next:after {
+.owl-controls .owl-next:after{
 	content: '\f105';
 }
 
-.owl-controls .owl-prev:hover, .owl-controls .owl-next:hover {
+.owl-controls .owl-prev:hover, .owl-controls .owl-next:hover{
 	background: var(--clr-red);
 }
 
