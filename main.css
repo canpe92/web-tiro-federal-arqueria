@@ -140,10 +140,6 @@ p{
     background-color: var(--clr-red);
 }
 
-/* novedades */
-
-
-
 /* novedades slider */
 
 .news-wrap{
@@ -406,3 +402,57 @@ p{
 	color: var(--clr-red);
 }
 
+/* responsive */
+ 
+button{
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.close-menu, .open-menu{
+    display: none;
+}
+
+@media screen and (max-width: 835px){
+    .nav-list{
+        position: fixed;
+        inset: 0;
+        background-color: var(--clr-white);
+        flex-direction: column;
+        right: 0;
+        text-align: right;
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        gap: 2rem;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-link{
+        font-size: 1.6rem;
+    }
+
+    .close-menu{
+        display: block;
+		/*position: absolute;*/
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .open-menu{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}

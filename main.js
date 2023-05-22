@@ -1,4 +1,4 @@
-/* Script nav menu mobile */
+/* Script nav menu responsive */
 
 let openMenu = document.querySelector("#open-menu");
 let closeMenu = document.querySelector("#close-menu");
@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
 });
 
-/*Validacion formulario bootstrap*/
+/* Validacion formulario bootstrap */
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
