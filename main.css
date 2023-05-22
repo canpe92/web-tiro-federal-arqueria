@@ -46,6 +46,7 @@ p{
 /* navegacion */
 
 .nav-menu{
+	margin-top: -100px;
     position: fixed;
     width: 100%;
     background-color: var(--clr-white);
@@ -56,7 +57,7 @@ p{
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 	z-index: 100;
-	margin-top: 0;
+	
 }
 
 .nav-logo{
@@ -89,6 +90,7 @@ p{
 /* inicio */
 
 .section-inicio{
+	margin-top: 100px;
     background: linear-gradient(rgba(9,5,54,.3),rgba(5,4,46,.7)),url("img/bg-top.png");
     width: 100%;
     height: 70vh;

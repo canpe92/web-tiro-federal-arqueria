@@ -52,3 +52,29 @@ $(document).ready(function(){
         }, false)
       })
   })()
+
+  fetch('https://apis.datos.gob.ar/georef/api/provincias')
+            .then(response => response.json())
+            .then(respuestaApi => {
+            let provincias = respuestaApi.provincias;
+              
+            const $select = document.getElementById("provincia")
+                //empty option
+            const $option = document.createElement("option")
+            $option.value = ""
+            $option.innerHTML = "Seleccione una provincia"
+            $select.appendChild($option)
+            provincias.forEach(provincia => {
+            const $option = document.createElement("option")
+            $option.value = provincia.nombre
+            $option.innerHTML = provincia.nombre
+            $select.appendChild($option)
+})
+              
+              
+              
+             
+            })
+            .catch((err) => {
+                console.log(err)
+            })
