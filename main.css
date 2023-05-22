@@ -416,6 +416,7 @@ button{
 
 @media screen and (max-width: 835px){
     .nav-list{
+		display: block;
         position: fixed;
         inset: 0;
         background-color: var(--clr-white);
