@@ -29,7 +29,6 @@
                 <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#novedades">Novedades</a></li>
                 <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                 <li class="nav-item"><a target="_blank" class="nav-link" href="https://arquerosonline.com.ar/">Torneos <i class="bi bi-box-arrow-up-right"></i></a></li>
             </ul>
         </nav>
@@ -165,6 +164,72 @@
                 </div>
             </div>
         </section>
+
+    <!--Inicio Formulario Consulta-->
+    <div class="container">
+        <form class="mt-6 needs-validation" novalidate>
+        <!-- <form class="mt-6"> -->
+            <div class="row mb-3">
+                <h3 class="col-6">Formulario de Consulta</h3>
+            </div>
+            <div class="row mb-3">
+                <label class="col-2 form-label" for="nombre">Nombre:</label>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre" required></input>
+                    <!-- <div class="valid-feedback">ok</div> -->
+                    <div class="invalid-feedback">Por favor ingrese nombre</div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-2 form-label" for="apellido">Apellido</label>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido" required></input>
+                    <!-- <div class="valid-feedback"></div> -->
+                    <div class="invalid-feedback">Por favor ingrese apellido</div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-2 form-label" for="emailImput">Email</label>
+                <div class="col-6">
+                    <input type="email" class="form-control" id="emailImput" placeholder="Ingrese su E-mail" required></input>
+                    <!-- <div class="valid-feedback"></div> -->
+                    <div class="invalid-feedback">Por favor ingrese su e-mail</div>
+                </div>
+            </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="ciudad">Ciudad</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su Ciudad" required></input>
+                        <!-- <div class="valid-feedback"></div> -->
+                        <div class="invalid-feedback">Por favor ingrese la ciudad donde vive</div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-2 form-label" for="provincia">Provincia</label>
+                    <div class="col-6">
+                        <select class="col-12 col-form-label" id="provincia" required>
+                           
+                        </select>
+                    </div>
+                    <!-- <div class="valid-feedback"></div> -->
+                    <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
+                </div>
+            <div class="row mb-3">
+                <label class="col-2 form-label" for="nivel">Experiencia</label>
+                <div class="col-6 btn-group" role="group" required>
+                    <button type="button" class="btn btn-primary" value="0">Principiante</button>
+                    <button type="button" class="btn btn-primary" value="1">Intermedio</button>
+                    <button type="button" class="btn btn-primary" value="2">Profesional</button>
+                </div>
+                <!-- <div class="valid-feedback"></div> -->
+                <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
+            </div>
+            <div class="row mb-3">
+                <button type="submit" class="col-2 btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <!--Fin Formulario Consulta-->
 
     <!-- footer -->
     <footer class="section-footer">

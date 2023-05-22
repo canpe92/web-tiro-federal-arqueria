@@ -2,7 +2,7 @@
 
 :root{
     --clr-red: crimson;
-    --clr-blue: dodgerblue;
+    --clr-blue: #2f529e;
     --clr-white: #fff;
 }
 
@@ -281,6 +281,7 @@ p{
 .news-grid:hover .news-grid-txt a{
 	text-decoration-line: none;
 	color: var(--clr-white);
+	background-color: var(--clr-red);
 	letter-spacing: 1.5px;
 	transition: .5s;
 }
@@ -392,6 +393,7 @@ p{
 .social i{
 	font-size: 2rem;
 	transition: .3s ease;
+	color: var(--clr-blue);
 }
 
 .social i:hover{
