@@ -270,6 +270,7 @@ p{
 .news-grid:hover .news-grid-box{
 	left: 15px;
 	transition: .5s;
+	background-color: var(--clr-red);
 }
 
 .news-grid:hover .news-grid-image img{
@@ -454,4 +455,17 @@ button{
         font-size: 2rem;
         cursor: pointer;
     }
+
+	.section-inicio{
+		padding-top: 0;
+	}
+
+	.inicio-inner p{
+		width: 95%;
+	}
+
+	.cursos-inner{
+		display: flex;
+		flex-direction: column;
+	}
 }
