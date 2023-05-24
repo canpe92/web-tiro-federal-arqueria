@@ -27,7 +27,7 @@ const datos =
         {
             id:1,
             imagen:'noved1.jpg',
-            dia: 28,
+            dia: 13,
             mes: 'Dic',
             anio: '2023',
             lugar: 'tiro federal',
@@ -114,8 +114,10 @@ var btnAbrirPopup = document.getElementsByClassName('btn-abrir-popup'),
 datos.forEach( dato =>{
 btnAbrirPopup[dato.id-1].addEventListener('click', function(){
     let detalle = document.querySelector("#popup")
-    detalle.innerHTML += `<div id="novedad">
-    <h3>`+ dato.info +`</h3>
+    detalle.innerHTML += 
+    `<div id="novedad">
+                <h3>`+ dato.titulo +`</h3>
+                <p >`+ dato.info +`<p>
     </div>`
 	overlay.classList.add('active');
 	popup.classList.add('active');

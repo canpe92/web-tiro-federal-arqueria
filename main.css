@@ -430,25 +430,7 @@ button{
     display: none;
 }
 
-@media screen and (max-width: 835px){
-    .nav-list{
-		display: block;
-        position: fixed;
-        inset: 0;
-        background-color: var(--clr-white);
-        flex-direction: column;
-        right: 0;
-        text-align: right;
-        padding: 2rem;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        gap: 2rem;
-        transform: translateX(100%);
-        visibility: hidden;
-        opacity: 0;
-        transition: .2s;
-    }
+
 
     .nav-list.active{
         transform: translateX(0);
@@ -485,7 +467,7 @@ button{
 		display: flex;
 		flex-direction: column;
 	}
-}
+
 
 /*
 manejo de popup
@@ -556,8 +538,8 @@ manejo de popup
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
-
+.popup.active p { animation: entradaInputs 1s linear 1s forwards; }
+ 
 @keyframes entradaTitulo {
 	from {
 		opacity: 0;
@@ -586,3 +568,25 @@ manejo de popup
 	from { opacity: 0; }
 	to { opacity: 1; }
 } 
+
+
+@media screen and (max-width: 835px){
+    .nav-list{
+		display: block;
+        position: fixed;
+        inset: 0;
+        background-color: var(--clr-white);
+        flex-direction: column;
+        right: 0;
+        text-align: right;
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        gap: 2rem;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s;
+    }
+}
