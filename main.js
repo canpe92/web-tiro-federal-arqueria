@@ -21,9 +21,11 @@ navLinks.forEach(navLink => {
 })
 
 /* Script slider novedades */
-let datos =
+
+const datos =
     [
         {
+            id:1,
             imagen:'noved1.jpg',
             dia: 28,
             mes: 'Dic',
@@ -31,10 +33,10 @@ let datos =
             lugar: 'tiro federal',
             titulo: 'Titulo de entrada',
             intro: 'Texto introductorio 1',
-            info: 'Lorem, ipsum dolor sit amet consectetur, adipisicing '
+            info: 'Información detallada de Novedad 1 '
         },
         {
-            
+            id:2,
             imagen:'noved2.jpg',
             dia: 30,
             mes: 'Sep',
@@ -42,9 +44,10 @@ let datos =
             lugar: 'tiro federal',
             titulo: 'Titulo de entrada',
             intro: 'Texto introductorio 2',
-            info: 'Lorem, ipsum dolor sit amet consectetur, adipisicing '
+            info: 'Información detallada de Novedad 2 '
         },
         {
+            id:3,
             imagen:'noved3.jpg',
             dia: 15,
             mes: 'Oct',
@@ -52,9 +55,10 @@ let datos =
             lugar: 'tiro federal',
             titulo: 'Titulo de entrada',
             intro: 'Texto introductorio 3',
-            info: 'Lorem, ipsum dolor sit amet consectetur, adipisicing '
+            info: 'Información detallada de Novedad 3'
         },
         {
+            id:4,
             imagen:'noved4.jpg',
             dia: 05,
             mes: 'Nov',
@@ -62,9 +66,10 @@ let datos =
             lugar: 'tiro federal',
             titulo: 'Titulo de entrada',
             intro: 'Texto introductorio 4',
-            info: 'Lorem, ipsum dolor sit amet consectetur, adipisicing '
+            info: 'Infomración detallada de Novedad 4'
         },
         {
+            id:5,
             imagen:'noved5.jpg',
             dia: 18,
             mes: 'Feb',
@@ -72,11 +77,12 @@ let datos =
             lugar: 'tiro federal',
             titulo: 'Titulo de entrada',
             intro: 'Texto introductorio 5',
-            info: 'Lorem, ipsum dolor sit amet consectetur, adipisicing '
+            info: 'Información detallada de Novedad 5 '
         },
     ]
 
 let carrusel = document.querySelector("#news-slider")
+
 datos.forEach(dato => {
 carrusel.innerHTML += `<div class="news-grid">
     <div class="news-grid-image"><img src="img/fotos novedades/` + dato.imagen +`" alt="">
@@ -88,32 +94,48 @@ carrusel.innerHTML += `<div class="news-grid">
             <span>`+ dato.lugar + `</span>
             <h2>`+ dato.titulo + `</h2>
             <ul>
-                <li><i class="fa fa-calendar" aria-hidden="true"></i>` + datos.mes + ` ` + datos.dia + `, ` + datos.anio + `</li>
+                <li><i class="fa fa-calendar" aria-hidden="true"></i>` + dato.mes + ` ` + dato.dia + `, ` + dato.anio + `</li>
             </ul>
             <p>`+ dato.intro + `</p>
-            <button id="btn-abrir-popup" class="btn-abrir-popup">Ver mas...</button>
+            <a id="btn-abrir-popup" class="btn-abrir-popup">Ver mas...</a>
 
         </div>
     </div>`;
 
 })
 
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+var btnAbrirPopup = document.getElementsByClassName('btn-abrir-popup'),
 	overlay = document.getElementById('overlay'),
 	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+    btnCerrarPopup = document.getElementById('popup');
+ 
 
-btnAbrirPopup.addEventListener('click', function(){
-    
+
+datos.forEach( dato =>{
+btnAbrirPopup[dato.id-1].addEventListener('click', function(){
+    let detalle = document.querySelector("#popup")
+    detalle.innerHTML += `<div id="novedad">
+    <h3>`+ dato.info +`</h3>
+    </div>`
 	overlay.classList.add('active');
 	popup.classList.add('active');
+   
+   
 });
 
-btnCerrarPopup.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
-});
+})
+
+
+btnCerrarPopup.addEventListener('click', function(){
+    let novedad = document.querySelector("#novedad")
+    $('#novedad').remove();
+    
+   
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+})
+
+
 
 $(document).ready(function () {
     $("#news-slider").owlCarousel({
@@ -171,3 +193,7 @@ fetch('https://apis.datos.gob.ar/georef/api/provincias')
     .catch((err) => {
         console.log(err)
     })
+
+   
+    
+    
