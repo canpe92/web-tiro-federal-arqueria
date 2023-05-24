@@ -8,6 +8,8 @@
 	--font-text: 'Rubik', sans-serif;
 }
 
+scroll-behavior: smooth;
+
 *{
     margin: 0;
     padding: 0;
