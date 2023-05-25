@@ -477,7 +477,6 @@ manejo de popup
 .section-formulario .btn{
     text-decoration: none;
     font-size: 0.9rem;
-    padding: 13px 35px;
 	color: var(--clr-white);
     background-color: var(--clr-blue);
     font-weight: 600;
@@ -530,6 +529,30 @@ button{
 }
 
 @media screen and (max-width: 835px){
+	.section-formulario .grupo-botones{
+		padding: 0;	
+	}
+	.section-formulario #enviar{
+		margin-left:25%;	
+	}
+	.section-formulario #experiencia {
+		margin-left: 100px;
+		
+	}	
+	.inicio-inner h1{
+		font-family: var(--font-title);
+		font-size: 2rem;
+		font-weight: 700;
+	}
+	.inicio-inner .p {
+		font-size: 1rem
+	}
+	.owl-controls .owl-prev{
+		display:none;
+	}
+	.owl-controls .owl-next{
+		display:none;
+	}
     .nav-list{
 		display: block;
         position: fixed;
@@ -602,5 +625,38 @@ button{
 	.cursos-info{
 		text-align: center;
 		padding-top: 10px;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	.section-formulario h3 {
+		margin: auto;
+	}
+	.section-formulario label {
+		margin: auto;
+	}
+	.section-formulario #experiencia {
+		margin-left: 100px;
+		
+	}
+	.section-formulario .grupo-botones{
+		padding: 20px 0px 0px 20px;	
+		justify-content: center;
+	
+	}
+	.section-formulario #enviar{
+		margin-left:120px;	
+	}
+	.inicio-inner h1{
+		font-family: var(--font-title);
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	.owl-controls .owl-prev{
+		display:none;
+	}
+	.owl-controls .owl-next{
+		display:none;
 	}
 }
