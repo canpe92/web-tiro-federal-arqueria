@@ -391,6 +391,7 @@ p{
 	padding: 20px;
 	text-align: center;
 	width: 600px;
+	z-index: 101;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
@@ -535,7 +536,7 @@ p{
 
  .marco {
 	border: 1px solid #d1d3e2;
-	max-width: 350px;
+	max-width: 380px;
 	padding: 5px;
 	border-radius: 5px;
 }
