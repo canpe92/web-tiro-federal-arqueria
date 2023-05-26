@@ -62,7 +62,7 @@
                     <h2 class="quienessomos-title">Quienes Somos</h2>
                     <p class="quienessomos-text">Somos un club apasionado al tiro con arco, estamos en las instalaciones del Tiro Federal Trelew Argentino donde brindamos cursos de iniciación al tiro con arco, proporcionando equipos y lugar para la práctica de este apasionante deporte.</p>
                     <div class="btns">
-                        <a class="btn" href="#cursos">Saber más</i></a>
+                        <a id="btn-abrir-popup-quienes" class="btn" >Saber más</i></a>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
             <form class="mt-6 needs-validation" novalidate>
                 <!-- <form class="mt-6"> -->
                 <div class="row mb-3">
-                    <h3 class="col-6">Formulario de Consulta</h3>
+                    <h3 class="col-12">Formulario de Consulta</h3>
                 </div>
                 <div class="row mb-3">
                     <label class="col-2 form-label" for="nombre">Nombre:</label>
@@ -152,14 +152,14 @@
                 <div class="row mb-3">
                     <label class="col-2 form-label" for="provincia">Provincia</label>
                     <div class="col-6">
-                        <select class="col-12 col-form-label" id="provincia" required>
+                        <select class="col-12 col-form-label form-control" id="provincia" required>
 
                         </select>
                     </div>
                     <!-- <div class="valid-feedback"></div> -->
                     <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
                 </div>
-                <div  class=" mb-3">
+                <div class="mb-3 marco">
                     <label id="experiencia" class="col-2 form-label" for="nivel">Experiencia</label>
                     <div class="col-12  grupo-botones" role="group" required>
                         <button type="button" class="btn " value="0">Principiante</button>
@@ -168,11 +168,11 @@
                     </div>
                     <!-- <div class="valid-feedback"></div> -->
                     <!-- <div class="invalid-feedback">Por favor seleccione una opcion</div> -->
-                
+                </div>
                     <div >
                         <button id="enviar" type="submit" class="btn mt-3">Enviar</button>
                     </div>
-                </div>
+               
                 
             </form>
         </div>

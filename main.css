@@ -373,6 +373,16 @@ p{
 	visibility: visible;
 }
 
+.scroll {
+	margin:4px, 4px;
+	padding:4px;
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align:justify;
+}
+
+
 .popup {
 	background: #F8F8F8;
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
@@ -414,6 +424,9 @@ p{
 	opacity: 0;
 }
 
+.popup p {
+	opacity: 0;
+}
 
 /* ------------------------- */ /* ANIMACIONES */ /* ------------------------- */ 
 
@@ -520,6 +533,12 @@ p{
     transition: 0.3s ease;
 }
 
+ .marco {
+	border: 1px solid #d1d3e2;
+	max-width: 350px;
+	padding: 5px;
+	border-radius: 5px;
+}
 .section-formulario .btn:hover{
     color: var(--clr-white);
     background-color: var(--clr-red);
@@ -572,6 +591,7 @@ button{
 @media screen and (max-width: 480px){
 	.section-formulario h3 {
 		margin: auto;
+	
 	}
 
 	.section-formulario label {

@@ -19,7 +19,53 @@ navLinks.forEach(navLink => {
         navList.classList.remove("active");
     })
 })
+// section quienes somos
 
+var btnAbrirPopupQuienes = document.getElementById('btn-abrir-popup-quienes'),
+	overlay = document.getElementById('overlay'),
+	popup = document.getElementById('popup'),
+    btnCerrarPopup = document.getElementById('popup');
+
+    btnAbrirPopupQuienes.addEventListener('click', function(){
+        let detalle = document.querySelector("#popup")
+        detalle.innerHTML += 
+        `<div id="novedad" class="scroll">
+                    <h3>Un poco de Historia del Tiro Federal Trelew Arqueria </h3>
+                    <p>En Trelew, la arquería como actividad organizada reciente, comenzó con las clases que dictaba la escuela de arquería Otendor aproximadamente en el  año 2005, en el teatro español de nuestra Ciudad. 
+                    En nuestra Institución -Tiro Federal Trelew -, el inicio lo podemos situar en el año 2007 .a través de un hecho fortuito (participación en un torneo aniversario en Bahía Blanca).  Posteriormente  esta semilla encuentra terreno fértil, en entusiastas aprendices de arquería  y  germina en nuestra institución “Tiro Federal Trelew”.
+                    Como cualquier actividad nueva el entusiasmo que provoca esta actividad, se comienzan las prácticas con mucho entusiasmo pero sin la debida preparación técnica y profesional necesaria. El siguiente período, es un tiempo de transición,  hasta que se forma la subcomisión de arquería de la institución Tiro Federal Trelew.  Comienza asimismo la participación formal de algunos arqueros, en los torneos organizados por la Federación Argentina de Tiro Con Arco (FATARCO). Posteriormente, al observar  que la actividad seguía en auge y que la institución Tiro Federal Trelew cuenta con la  estructura administrativa que requiere FATARCO para asociarse  adherimos nuestra institución a la Federación Nacional. 
+                    El 16 de noviembre de 2012, se crea la subcomisión de arquería y se comienza también a pensar, la forma de dar curso a las demandas de los socios e interesados en realizar prácticas regulares y más formales de arquería. 
+                    En Julio de 2014, se logra finalmente que nuestro Tiro Federal Trelew, se encuentre afiliado a la Federación Argentina de Tiro con Arco, (FATARCO) con todos los beneficios derivados de la integración a una institución Nacional.
+                    En el mes de octubre de 2014, tres integrantes de la institución realizan un curso de entrenadores, organizado por la Asociación de Amigos del Tiro Con Arco (ATAC), comodoro Rivadavia, con la anuencia y uno de los principales entrenadores de FATARCO, obteniendo entonces, la capacitación necesaria como entrenadores para poder transmitir las técnicas que FATARCO ha considerado las mejores para el aprendizaje de esta actividad.
+                    En el año 2019 se incorporan dos entrenadores más a la oferta institucional. 
+                    En lo referente a la actuación deportiva, representantes de nuestra institución han participado dentro de la zona  patagónica y a nivel nacional en un sinnúmero de torneos oficiales, homologatorios, nacionales y ranqueables. Se obtuvieron importantes logros deportivos en las finales regionales y nacionales en las modalidades Juego de Campo,  Sala, 70/70 y 3D. </p>
+                    
+                    <p>Practicamos arquería básicamente por que nos gusta pero además podemos enumerar que </p>
+                    
+                    <p>1- El arco favorece la coordinación óculo-motriz.</p>
+                    
+                    <p>2- Genera una placentera mejoría de la condición física del practicante, proporcional a la asiduidad en la práctica del deporte en sí y de otros asociados. Por tanto, ayuda al control de los factores de riesgo cardiovascular (hipertensión arterial, tabaquismo, diabetes, obesidad, hipercolesterolemia).</p>
+                    
+                    <p>3- Potencia enormemente la capacidad de concentración y el autocontrol.</p>
+                    
+                    <p>4- Genera inclusión social de niños, jóvenes, adultos, ancianos y personas con algún tipo de discapacidad en un mismo entorno.</p>
+                    
+                    <p>5- Control y liberación del estrés diario, en contacto con la naturaleza o dentro de sus múltiples modalidades.</p>
+                    
+                    <p>6- Socialización. El deporte y las competiciones deportivas desarrollan valores y actitudes que moldean el espíritu y el carácter de las personas. Crea individuos con mentalidad positiva, cultivados en el esfuerzo personal y la superación, respetuosos, justos y disciplinados.</p>
+                    
+                    <p>7- Diversión y desafío personal inagotables ¡Es practicable de 9 a 90 años y con casi cualquier condición física de base!</p>
+                    
+                    <p>8- Recreación ancestral en la belleza del instrumento, en el vuelo de la flecha, en la fabricación de la misma y de otros complementos como las cuerdas. </p>
+                    
+                    </p>
+        </div>`
+        overlay.classList.add('active');
+        popup.classList.add('active');
+       
+       
+    });
+    
 /* Script slider novedades */
 
 const datos =
