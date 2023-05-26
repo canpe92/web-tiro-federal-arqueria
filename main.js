@@ -27,57 +27,57 @@ const datos =
         {
             id:1,
             imagen:'noved1.jpg',
-            dia: 13,
-            mes: 'Dic',
+            dia: 06,
+            mes: 'Mayo',
             anio: '2023',
             lugar: 'tiro federal',
-            titulo: 'Titulo de entrada',
-            intro: 'Texto introductorio 1',
-            info: 'Información detallada de Novedad 1 '
+            titulo: 'Curso de iniciación al tiro con arco de Mayo',
+            intro: '',
+            info: 'Este sábado dimos inicio al esperado curso de arquería en el Club Tiro Federal Trelew. Durante la primera clase, nuestros aspirantes pudieron disfrutar de una experiencia única, aprendiendo las técnicas básicas para comenzar a practicar este deporte tan apasionante. Mientras tanto, nuestros arqueros más avanzados continuaron con sus prácticas y otros se dedicaron al armado de las contenciones para garantizar la seguridad de todos. ¡Estamos muy felices de haber comenzado este nuevo ciclo de aprendizaje y esperamos verlos pronto en nuestra próxima clase!'
         },
         {
             id:2,
             imagen:'noved2.jpg',
-            dia: 30,
-            mes: 'Sep',
+            dia: 26,
+            mes: 'Marzo',
             anio: '2023',
             lugar: 'tiro federal',
-            titulo: 'Titulo de entrada',
-            intro: 'Texto introductorio 2',
-            info: 'Información detallada de Novedad 2 '
+            titulo: 'Torneo Social Fundación Ceferino Puerto Madryn',
+            intro: '',
+            info: 'Este domingo, participamos en el Torneo 3D Social de Arquería de la Fundación Ceferino Namuncurá y tuvimos el agrado de compartir una jornada agradable junto a arqueros de diversos clubes. Felicitamos a Romina, @LaPeque, miembro de nuestro club, Tiro Federal Trelew, quien en su primer torneo obtuvo el primer puesto en la categoría tradicional escuela. Esperamos que este triunfo sea el primero de muchos más. Agradecemos a la Fundación Ceferino Namuncurá por organizar este torneo y los esperamos el próximo 8 de abril en el JJCC que organizamos en Trelew.'
         },
         {
             id:3,
             imagen:'noved3.jpg',
-            dia: 15,
-            mes: 'Oct',
+            dia: 12,
+            mes: 'Abril',
             anio: '2023',
             lugar: 'tiro federal',
-            titulo: 'Titulo de entrada',
-            intro: 'Texto introductorio 3',
-            info: 'Información detallada de Novedad 3'
+            titulo: 'Juego de campo rankeable zona patagónica  en el Tiro Federal Trelew',
+            intro: '',
+            info: '¡Hola arqueros! 🎯 Queremos contarles que el sábado pasado tuvimos una increíble competencia de juego de campo en el Tiro Federal Trelew. ¡Y fue todo un éxito gracias a la participación de 57 arqueros provenientes de diferentes localidades y provincias aledañas! Queremos felicitar especialmente a los arqueros de nuestro club que participaron en la competencia, Además, queremos agradecer a todos los colaboradores que nos ayudaron tanto en la preparación de las deliciosas pizzas como en la organización del campo. También queremos agradecer a @canal12trelew por la cobertura que nos brindaron.'
         },
         {
             id:4,
             imagen:'noved4.jpg',
-            dia: 05,
-            mes: 'Nov',
-            anio: '2023',
+            dia: 06,
+            mes: 'Diciembre',
+            anio: '2022',
             lugar: 'tiro federal',
-            titulo: 'Titulo de entrada',
-            intro: 'Texto introductorio 4',
-            info: 'Infomración detallada de Novedad 4'
+            titulo: 'Cena Fin de año',
+            intro: '',
+            info: 'Este sábado se llevó a cabo la cena anual, de cierre de actividades. Dónde fueron distinguidos algunos de nuestros arqueros, por su gran participación en competencias de la Federación Argentina de tiro con Arco. Hemos tenido un gran 2022....y esperamos tener un 2023 aún mejor, con muchos más desafíos.'
         },
         {
             id:5,
             imagen:'noved5.jpg',
             dia: 18,
-            mes: 'Feb',
+            mes: 'Febrero',
             anio: '2023',
             lugar: 'tiro federal',
-            titulo: 'Titulo de entrada',
-            intro: 'Texto introductorio 5',
-            info: 'Información detallada de Novedad 5 '
+            titulo: '¡Seguimos Avanzando!',
+            intro: '',
+            info: 'Muy felices por la nueva adquisición de figuras 3D para arquería. Muy pronto podremos comenzar con los torneos en la modalidad 3D. ¡Seguimos Avanzando!'
         },
     ]
 
@@ -148,8 +148,8 @@ $(document).ready(function () {
     });
 });
 
-/* Validacion formulario bootstrap */
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+/* Validacion formulario bootstrap */ // Example starter JavaScript for disabling form submissions if there are invalid fields
+
 (function () {
     'use strict'
 

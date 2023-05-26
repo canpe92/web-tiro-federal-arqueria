@@ -138,6 +138,34 @@ p{
     background-color: var(--clr-red);
 }
 
+/* quienes somos */
+
+.section-quienessomos{
+	padding-top: 30px;
+}
+
+.quienessomos-inner{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.quienessomos-inner .btn{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+	color: var(--clr-white);
+    background-color: var(--clr-blue);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.quienessomos-inner .btn:hover{
+    color: var(--clr-white);
+    background-color: var(--clr-red);
+}
+
 /* novedades slider */
 
 .news-wrap{
@@ -326,9 +354,8 @@ p{
 	background: var(--clr-red);
 }
 
-/*
-manejo de popup
-*/
+/* manejo de popup */
+
 .overlay {
 	background: rgba(0,0,0,.3);
 	position: fixed;
@@ -388,10 +415,8 @@ manejo de popup
 }
 
 
+/* ------------------------- */ /* ANIMACIONES */ /* ------------------------- */ 
 
-/* ------------------------- */
-/* ANIMACIONES */
-/* ------------------------- */ 
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
@@ -458,7 +483,7 @@ manejo de popup
 	padding-bottom: 10px;
 }
 
-.section-cursos .btn{
+.cursos-inner .btn{
     text-decoration: none;
     font-size: 0.9rem;
     padding: 13px 35px;
@@ -469,10 +494,12 @@ manejo de popup
     transition: 0.3s ease;
 }
 
-.section-cursos .btn:hover{
+.cursos-inner .btn:hover{
     color: var(--clr-white);
     background-color: var(--clr-red);
 }
+
+/* formulario */
 
 .section-formulario .btn{
     text-decoration: none;
