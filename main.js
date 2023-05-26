@@ -197,5 +197,11 @@ fetch('https://apis.datos.gob.ar/georef/api/provincias')
     })
 
    
-    
-    
+/* ocultar - mostrar formulario */
+
+let btnCursos = document.querySelector("#btn-cursos");
+
+
+btnCursos.addEventListener("click", () => {
+    formulario.classList.add("active");
+})

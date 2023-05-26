@@ -454,6 +454,10 @@ p{
 
 /* cursos */
 
+.section-cursos{
+	padding-bottom: 75px;
+}
+
 .cursos-inner{
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
@@ -501,6 +505,11 @@ p{
 
 /* formulario */
 
+.section-formulario{
+    display: none;
+    transition: .2s;
+}
+
 .section-formulario .btn{
     text-decoration: none;
     font-size: 0.9rem;
@@ -516,6 +525,11 @@ p{
     background-color: var(--clr-red);
 }
 
+/* formulario oculto - visible */
+
+.section-formulario.active{
+    display: block;
+}
 
 /* footer */
 
@@ -559,29 +573,34 @@ button{
 	.section-formulario h3 {
 		margin: auto;
 	}
+
 	.section-formulario label {
 		margin: auto;
 	}
+
 	.section-formulario #experiencia {
 		margin-left: 100px;
-		
 	}
+
 	.section-formulario .grupo-botones{
 		padding: 20px 0px 0px 20px;	
 		justify-content: center;
-	
 	}
+
 	.section-formulario #enviar{
 		margin-left:120px;	
 	}
+
 	.inicio-inner h1{
 		font-family: var(--font-title);
 		font-size: 1rem;
 		font-weight: 700;
 	}
+
 	.owl-controls .owl-prev{
 		display:none;
 	}
+
 	.owl-controls .owl-next{
 		display:none;
 	}
@@ -592,27 +611,33 @@ button{
 	.section-formulario .grupo-botones{
 		padding: 0;	
 	}
+
 	.section-formulario #enviar{
 		margin-left:20%;	
 	}
+
 	.section-formulario #experiencia {
 		margin-left: 100px;
-		
 	}	
+
 	.inicio-inner h1{
 		font-family: var(--font-title);
 		font-size: 2rem;
 		font-weight: 700;
 	}
+
 	.inicio-inner .p {
 		font-size: 1rem
 	}
+
 	.owl-controls .owl-prev{
 		display:none;
 	}
+
 	.owl-controls .owl-next{
 		display:none;
 	}
+
     .nav-list{
 		display: block;
         position: fixed;
@@ -644,7 +669,6 @@ button{
 
     .close-menu{
         display: block;
-		/*position: absolute;*/
         font-size: 2rem;
         cursor: pointer;
     }
