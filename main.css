@@ -410,48 +410,9 @@ img {
 .carousel.dragging img{
 	pointer-events: none;
   }
-
-/* novedades slider OWL */
-
-.owl-controls .owl-buttons{
-	position: relative;
+.puntos .invisible{
+	visibility: hidden;
 }
-
-.owl-controls .owl-prev{
-	position: absolute;
-	left: -40px;
-	bottom: 230px;
-	padding: 8px 17px;
-	background: var(--clr-blue);
-	border-radius: 50px;
-	transition: .5s;
-}
-
-.owl-controls .owl-next{
-	position: absolute;
-	right: -40px;
-	bottom: 230px;
-	padding: 8px 17px;
-	background: var(--clr-blue);
-	border-radius: 50px;
-	transition: .5s;
-}
-
-.owl-controls .owl-prev:after, .owl-controls .owl-next:after{
-	content: '\f104';
-	font-family: FontAwesome;
-	color: var(--clr-white);
-	font-size: 16px;
-}
-
-.owl-controls .owl-next:after{
-	content: '\f105';
-}
-
-.owl-controls .owl-prev:hover, .owl-controls .owl-next:hover{
-	background: var(--clr-red);
-}
-
 /* manejo de popup */
 
 .overlay {

@@ -174,8 +174,10 @@ const punto     = document.querySelectorAll('.punto')
 
 if(screen.width<480){
     grande.style.width = (datos.length)*100 +`%`
+    puntos.classList.add('invisible')
 } else {
 grande.style.width = (datos.length/2)*100 +`%` 
+puntos.classList.remove('invisible')
 }
 
 // Cuando CLICK en punto
@@ -244,6 +246,7 @@ btnCerrarPopup.addEventListener('click', function(){
 
 
 //mover slider con dispositivos moviles
+if(screen.width<720){
 const carousel = document.querySelector(".carrousel"),
 firstBox = carousel.querySelectorAll(".news-grid")[0]
 
@@ -251,7 +254,7 @@ let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, position
 
 const dragStart = (e) => {
     // updatating global variables value on mouse down event
-    console.log('pasa por acá')
+   
     isDragStart = true;
     prevPageX = e.pageX || e.touches[0].pageX;
     prevScrollLeft = carousel.scrollLeft;
@@ -285,16 +288,9 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
-
+}
 //-------------------------
-$(document).ready(function () {
-    $("#news-slider").owlCarousel({
-        items: 3,
-        navigation: true,
-        navigationText: ["", ""],
-        autoPlay: true
-    });
-});
+
 
 /* Validacion formulario bootstrap */ // Example starter JavaScript for disabling form submissions if there are invalid fields
 
