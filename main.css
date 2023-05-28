@@ -200,7 +200,7 @@ img {
   }
   
   .carrousel .grande {
-	width: 200%;
+	/* width: 500%; se setea medianta js*/
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -215,10 +215,14 @@ img {
 	transform: translateX(0%);
   }
   
-  .carrousel .news-grid-image .img {
-	
-	width: calc( 100%/5  - 2em);
+  .carrousel .news-grid-image img {
+	/* object-fit: cover; */
+	/* width: calc( 100%/5  - 2em); */
+	width: 100%;
 	min-height: 10vh; 
+	
+	height: 250px; /*altura maxima hay que ver responsive*/
+
 	color: var(--negro);
 	transition: all 0.4s ease;
 	border-radius: 1em;
@@ -259,7 +263,7 @@ img {
 }
 
 .news-grid{
-	width: auto;
+	width: 100%;
 	position: relative;
 	background: var(--clr-white);
 	border-radius: 5px;
@@ -270,7 +274,7 @@ img {
 
 .news-grid-image{
 	/* width: 100%; */
-	width: calc( 100% / 2 - 2em);
+	/* width: calc( 100% / 5 - 2em); */
 	min-height: 10vh; 
 	height: 280px;
 	overflow: hidden;
