@@ -65,7 +65,9 @@ var btnAbrirPopupQuienes = document.getElementById('btn-abrir-popup-quienes'),
        
        
     });
-    
+   
+
+
 /* Script slider novedades */
 
 const datos =
@@ -127,15 +129,19 @@ const datos =
         },
     ]
 
-let carrusel = document.querySelector("#news-slider")
+
+
+let carrusel = document.querySelector("#grande")
 
 datos.forEach(dato => {
 carrusel.innerHTML += `<div class="news-grid">
-    <div class="news-grid-image"><img src="img/fotos novedades/` + dato.imagen +`" alt="">
+    <div class="news-grid-image">
+        <img src="img/fotos novedades/` + dato.imagen +`" alt="">
         <div class="news-grid-box">
             <h1>`+ dato.dia + `</h1>
             <p>`+ dato.mes + `</p>
-        </div></div>
+        </div>
+        </div>
         <div class="news-grid-txt">
             <span>`+ dato.lugar + `</span>
             <h2>`+ dato.titulo + `</h2>
@@ -149,6 +155,52 @@ carrusel.innerHTML += `<div class="news-grid">
     </div>`;
 
 })
+
+let puntos = document.querySelector("#puntos");
+console.log(puntos);
+for (i=0; i<datos.length; i++){
+    if (i==0){
+        puntos.innerHTML +=`<li class="punto activo"></li>`;
+    } else{
+    puntos.innerHTML +=`<li class="punto"></li>`;
+}
+}
+
+// nuevo carrusel  
+
+const grande    = document.querySelector('.grande')
+const punto     = document.querySelectorAll('.punto')
+grande.style.width = datos.length*100 +`%` 
+// Cuando CLICK en punto
+    // Saber la posición de ese punto
+    // Aplicar un transform translateX al grande
+    // QUITAR la clase activo de TODOS puntos
+    // AÑADIR la clase activo al punto que hemos hecho CLICK
+
+// Recorrer TODOS los punto
+punto.forEach( ( cadaPunto , i )=> {
+    // Asignamos un CLICK a cadaPunto
+    punto[i].addEventListener('click',()=>{
+
+        // Guardar la posición de ese PUNTO
+        let posicion  = i
+        // Calculando el espacio que debe DESPLAZARSE el GRANDE
+        let operacion = posicion * -(100/(datos.length));
+
+        // MOVEMOS el grand
+        grande.style.transform = `translateX(${ operacion }%)`
+
+        // Recorremos TODOS los punto
+        punto.forEach( ( cadaPunto , i )=>{
+            // Quitamos la clase ACTIVO a TODOS los punto
+            punto[i].classList.remove('activo')
+        })
+        // Añadir la clase activo en el punto que hemos hecho CLICK
+        punto[i].classList.add('activo')
+
+    })
+})
+
 
 var btnAbrirPopup = document.getElementsByClassName('btn-abrir-popup'),
 	overlay = document.getElementById('overlay'),
