@@ -316,6 +316,7 @@ img {
 
 .news-grid-txt{
 	padding: 25px;
+	height: 300px;
 }
 
 .news-grid-txt span{
@@ -685,7 +686,9 @@ button{
 		margin: auto;
 	
 	}
-
+	.grande {
+		width: 500%;
+	}
 	.section-formulario label {
 		margin: auto;
 	}

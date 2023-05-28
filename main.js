@@ -134,14 +134,15 @@ const datos =
 let carrusel = document.querySelector("#grande")
 
 datos.forEach(dato => {
-carrusel.innerHTML += `<div class="news-grid">
+carrusel.innerHTML += 
+`<div class="news-grid">
     <div class="news-grid-image">
         <img src="img/fotos novedades/` + dato.imagen +`" alt="">
         <div class="news-grid-box">
             <h1>`+ dato.dia + `</h1>
             <p>`+ dato.mes + `</p>
         </div>
-        </div>
+    </div>
         <div class="news-grid-txt">
             <span>`+ dato.lugar + `</span>
             <h2>`+ dato.titulo + `</h2>
@@ -152,7 +153,7 @@ carrusel.innerHTML += `<div class="news-grid">
             <a id="btn-abrir-popup" class="btn-abrir-popup">Ver mas...</a>
 
         </div>
-    </div>`;
+</div>`;
 
 })
 
@@ -170,7 +171,13 @@ for (i=0; i<datos.length; i++){
 
 const grande    = document.querySelector('.grande')
 const punto     = document.querySelectorAll('.punto')
-grande.style.width = datos.length*100 +`%` 
+console.log(screen.width);
+if(screen.width<480){
+    grande.style.width = (datos.length)*100 +`%`
+} else {
+grande.style.width = (datos.length/2)*100 +`%` 
+}
+
 // Cuando CLICK en punto
     // Saber la posición de ese punto
     // Aplicar un transform translateX al grande
