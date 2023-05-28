@@ -158,7 +158,7 @@ carrusel.innerHTML +=
 })
 
 let puntos = document.querySelector("#puntos");
-console.log(puntos);
+
 for (i=0; i<datos.length; i++){
     if (i==0){
         puntos.innerHTML +=`<li class="punto activo"></li>`;
@@ -171,7 +171,7 @@ for (i=0; i<datos.length; i++){
 
 const grande    = document.querySelector('.grande')
 const punto     = document.querySelectorAll('.punto')
-console.log(screen.width);
+
 if(screen.width<480){
     grande.style.width = (datos.length)*100 +`%`
 } else {
@@ -243,7 +243,50 @@ btnCerrarPopup.addEventListener('click', function(){
 })
 
 
+//mover slider con dispositivos moviles
+const carousel = document.querySelector(".carrousel"),
+firstBox = carousel.querySelectorAll(".news-grid")[0]
 
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    console.log('pasa por acá')
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+  
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+   
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+
+//-------------------------
 $(document).ready(function () {
     $("#news-slider").owlCarousel({
         items: 3,

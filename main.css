@@ -403,6 +403,14 @@ img {
 	transition: .5s;
 }
 
+.carousel.dragging{
+	cursor: grab;
+	scroll-behavior: auto;
+  }
+.carousel.dragging img{
+	pointer-events: none;
+  }
+
 /* novedades slider OWL */
 
 .owl-controls .owl-buttons{
@@ -482,7 +490,7 @@ img {
 	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	text-align: center;
-	width: 600px;
+	width: 90%;
 	z-index: 200;
 	
 	transition: .3s ease all;
@@ -686,9 +694,7 @@ button{
 		margin: auto;
 	
 	}
-	.grande {
-		width: 500%;
-	}
+	
 	.section-formulario label {
 		margin: auto;
 	}
